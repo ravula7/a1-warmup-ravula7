@@ -22,11 +22,9 @@ public class A1Novice {
 
 		do {
 
-			char firstInitial = scan.next().charAt(0);
+			char firstInitial = scan.next().charAt(0); lastName.add(scan.next());
 			firstName.add(firstInitial);
 
-			lastName.add(scan.next());
-			int customerID = scan.nextInt();
 			double eachTotal = getTotal();
 			total.add(eachTotal);
 
@@ -44,14 +42,12 @@ public class A1Novice {
 			Scanner scan = new Scanner(System.in);
 			ArrayList<Number> totalOfEachItem = new ArrayList<>();
 			double customerTotal = 0;
-			int itemsBought = scan.nextInt();
+			int customerID = scan.nextInt();
 			do {
-				int itemEach = scan.nextInt();
-				String itemName = scan.next();
-				double itemPrice = scan.nextDouble();
+				int itemEach = scan.nextInt(); String itemName = scan.next(); double itemPrice = scan.nextDouble();
 				totalOfEachItem.add(itemEach * itemPrice);
-				itemsBought = itemsBought - itemEach;
-			} while (itemsBought > 0);
+				customerID = customerID - 1;
+			} while (customerID > 0);
 
 			for (int i = 0; i < totalOfEachItem.size(); i++) {
 				customerTotal += (double) totalOfEachItem.get(i);
