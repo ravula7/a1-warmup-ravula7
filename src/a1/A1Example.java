@@ -37,15 +37,15 @@ public class A1Example {
 		
 		// Use helper functions to calculate sum, min, and max
 		
-		int sum = calculateValueSum(values);
-		int min = findValueMin(values);
-		int max = findValueMax(values);
+	//	int sum = calculateValueSum(values);
+	//	int min = findValueMin(values);
+	//	int max = findValueMax(values);
 		
 		// Print results
 		
-		System.out.println("Min: " + min);
-		System.out.println("Max: " + max);
-		System.out.println("Average: " + String.format("%.2f", ((double) sum) / ((double) count)));
+	//	System.out.println("Min: " + min);
+	//	System.out.println("Max: " + max);
+	//	System.out.println("Average: " + String.format("%.2f", ((double) sum) / ((double) count)));
 		
 	}
 	
@@ -82,10 +82,10 @@ public class A1Example {
 	 * Input array must not be null and must contain at least one value.
 	 */
 	
-	static int findValueMin(int[] vals) {
+	static double findValueMin(double[] vals) {
 		
 		// Initialize current minimum to first value in array.
-		int cur_min = vals[0];
+		double cur_min = vals[0];
 		
 		// Starting with second value (if any), compare each value
 		// in array with current minimum and replace if smaller.
